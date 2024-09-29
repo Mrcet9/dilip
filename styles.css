@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background:#a569bd;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Container Styles */
+.container {
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: #ccd1d1;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Services List Styles */
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Profile Grid Styles */
+#profile-grid {
+    margin-top: 20px;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profile-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 22%; /* Four cards in a row */
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.profile-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile-info h3 {
+    margin: 10px 0 5px;
+}
+
+.profile-info p {
+    color: #666;
+}
+
+/* Portfolio Styles */
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-gallery img {
+    width: 32%; /* Three images in a row */
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+button {
+    padding: 5px;
+    background: #5c67f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4b55d4;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h2 {
+    color: #f4f4f4;
+}
+
+.footer-section a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 48%; /* Two cards in a row on smaller screens */
+    }
+
+    .portfolio-gallery img {
+        width: 48%; /* Two images in a row */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        width: 100%; /* One card in a row on very small screens */
+    }
+
+    .portfolio-gallery img {
+        width: 100%; /* One image in a row */
+    }
+}
+
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Padding for spacing */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Align sections evenly */
+    max-width: 1200px; /* Limit width for larger screens */
+    margin: 0 auto; /* Center the footer */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.footer-section {
+    flex: 1; /* Allow sections to grow equally */
+    margin: 0 10px; /* Space between sections */
+}
+
+.footer-section h2 {
+    margin-bottom: 10px; /* Space below headings */
+}
+
+.footer-section a {
+    color: #fff; /* White links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+    text-align: center; /* Center text in footer bottom */
+    margin-top: 20px; /* Space above the bottom text */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+.social-icons {
+    display: flex; /* Align social icons horizontally */
+}
+
+.social-icons a {
+    margin: 0 5px; /* Space between icons */
+}
+
+.social-icons img {
+    width: 24px; /* Set icon size */
+    height: 24px; /* Set icon size */
+}

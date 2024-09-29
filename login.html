@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarOne - User Authentication</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons.js"></script>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <section id="login" class="auth-section">
+        <div class="container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#signup" onclick="showSignup()">Sign Up</a></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sign Up Form -->
+    <section id="signup" class="auth-section" style="display: none;">
+        <div class="container">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Name:</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#login" onclick="showLogin()">Login</a></p>
+            </form>
+        </div>
+    </section>
+
+    <script src="login.js"></script>
+</body>
+</html>
